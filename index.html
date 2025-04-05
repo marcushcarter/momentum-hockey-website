@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Momentum Hockey</title>
+  <meta charset="UTF-8">
+  <title>Horizontal Links</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .link-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .link-container a {
+      text-decoration: none;
+      color: black;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <div class="link-container">
+    <a href="#">apple</a>
+    <a href="#">banana</a>
+    <a href="#">cherry</a>
+    <a href="#">date</a>
+    <a href="#">elderberry</a>
+    <a href="#">fig</a>
+    <a href="#">grape</a>
+  </div>
+
+  <custom-footer></custom-footer>
 </body>
 </html>
