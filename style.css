@@ -370,3 +370,26 @@ nav .website-name {
 		font-size: 0.9rem;
 	}
 }
+
+/* PLAYER PROFILE PICTURE */
+
+.abs-img {
+    position: absolute;
+}
+
+.profile-picture {
+    width: calc(100% - 10px);
+    height: 300px;
+    object-fit: cover;
+}
+
+.headshot {
+    position: relative;
+    left: calc(50vw - 100px);
+    bottom: 100px;
+    width: 200px; 
+    height: 200px; 
+    padding: 10px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}

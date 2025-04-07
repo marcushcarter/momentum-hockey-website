@@ -18,7 +18,6 @@ class Navbar extends HTMLElement {
                 <!-- <a href="index.html"><img class="navbar-logo" src="resources/Marcus Carter.JPG"></a> -->
                 <a href="index.html" class="website-name">MOMENTUM HOCKEY</a>
             </nav>
-            <img src="resources/favicon.png" class="title header-logo" alt="Momentum Hockey Logo">
         `;
     }
 }
