@@ -340,7 +340,7 @@ nav .website-name {
 
 /* PLAYER PROFILE STATS */
 
-.season-totals {
+.table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -349,7 +349,7 @@ nav .website-name {
 	overflow: auto;
 }
 
-.season-totals table {
+.table table {
 	border-collapse: collapse;
 	width: 100%;
 	max-width: 1000px;
@@ -357,7 +357,7 @@ nav .website-name {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.season-totals th, td {
+.table th, td {
 	border: 1px solid #ccc;
 	padding: 10px;
 	font-size: 1rem;
