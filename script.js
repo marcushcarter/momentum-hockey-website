@@ -11,7 +11,8 @@ class Navbar extends HTMLElement {
                         <a href="our-players.html">Our Players</a>
                         <a href="our-staff.html">Our Staff</a>
                         <a href="advising.html">Advising</a>
-
+                        <a href="services.html">Services</a>
+                        <a href="contact-us.html">Contact Us</a>
                     </div>
                 </div>
                 <!-- <a href="index.html"><img class="navbar-logo" src="resources/Marcus Carter.JPG"></a> -->
@@ -33,7 +34,7 @@ class Footer extends HTMLElement {
                 <div class="extra-links">
                     <a href="our-staff.html">About</a>
                     <a target=_self>Contact us</a>
-                    <a>Contribute</a>
+                    <a href="services.html">Services</a>
                     <a>Privacy Policy</a>
                 </div>
                 <a class="copyright">Momentum Hockey Scouts © 2024</a>
