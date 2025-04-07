@@ -10,6 +10,7 @@ class Navbar extends HTMLElement {
                         <a href="index.html">Home</a>
                         <a href="our-players.html">Our Players</a>
                         <a href="our-staff.html">Our Staff</a>
+                        <a href="advising.html">Advising</a>
 
                     </div>
                 </div>
@@ -27,13 +28,11 @@ class Footer extends HTMLElement {
             <footer>
                 <div class="social-links">
                     <a href="https://instagram.com/momentumhockeyscouts" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@ballisticstudiosofficial" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://github.com/marcushcarter" target="_blank"><i class="fa-brands fa-github"></i></a> 
                 </div>
                 <div class="extra-links">
-                    <a href="about.html">About</a>
-                    <a href="contact-us.html" target=_self>Contact us</a>
-                    <a href="contribute.html">Contribute</a>
+                    <a href="our-staff.html">About</a>
+                    <a target=_self>Contact us</a>
+                    <a>Contribute</a>
                     <a>Privacy Policy</a>
                 </div>
                 <a class="copyright">Momentum Hockey Scouts © 2024</a>
