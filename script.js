@@ -9,6 +9,7 @@ class Navbar extends HTMLElement {
                     <div class="dropdown">
                         <a href="index.html">Home</a>
                         <a href="our-players.html">Our Players</a>
+                        <a href="our-staff.html">Our Staff</a>
 
                     </div>
                 </div>

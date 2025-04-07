@@ -258,3 +258,27 @@ nav .website-name {
     background-color: #666;
     margin: 10px 0;
 }
+
+/* WESITES IMAGE SCROLLER */
+
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-500%); }
+}
+
+.carousel-container {
+    width: calc(100% - 40px);
+    /* max-width: 800px; */
+    margin: 20px auto;
+    overflow: hidden;
+    /* padding: 10px; */
+}
+.carousel-images {
+    display: flex;
+    animation: scroll 60s linear infinite;
+}
+.carousel-images img {
+    height: 250px;
+    object-fit: cover;
+    margin-right: 10px;
+}
