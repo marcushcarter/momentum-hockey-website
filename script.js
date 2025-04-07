@@ -3,19 +3,17 @@
 class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <nav class="nav-bar">
+            <nav>
                 <div class="menu-container">
-                    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                    <div class="menu"><i class="fa-solid fa-bars icon"></i></div>
                     <div class="dropdown">
-                        <a href="search.html"><i class="fa-solid fa-magnifying-glass" style="font-size: 18px;"></i></a>
                         <a href="index.html">Home</a>
-                        <a href="websites.html">Websites</a>
-                        <a href="about.html">About</a>
-                        <a href="contribute.html">Contribute</a>
+                        <a href="our-players.html">Our Players</a>
+
                     </div>
                 </div>
-                <a href="index.html" class="website-name">Ballistic Studios</a>
-                <a href="websites.html" class="login-btn">Websites</a>
+                <!-- <a href="index.html"><img class="navbar-logo" src="resources/Marcus Carter.JPG"></a> -->
+                <a href="index.html" class="website-name">MOMENTUM HOCKEY</a>
             </nav>
         `;
     }
@@ -32,14 +30,12 @@ class Footer extends HTMLElement {
                     <a href="https://github.com/marcushcarter" target="_blank"><i class="fa-brands fa-github"></i></a> 
                 </div>
                 <div class="extra-links">
-                    <a href="index.html">Home</a>
-                    <a >Store</a>
                     <a href="about.html">About</a>
-                    <a href="mailto:marcoose408@gmail.com" target=_self>Contact us</a>
+                    <a href="contact-us.html" target=_self>Contact us</a>
                     <a href="contribute.html">Contribute</a>
                     <a>Privacy Policy</a>
                 </div>
-                <a class="copyright">Ballistic Studios © 2024</a>
+                <a class="copyright">Momentum Hockey Scouts © 2024</a>
             </footer>
         `;
     }
@@ -77,5 +73,39 @@ function filterItems() {
         } else {
             item.style.display = "none";
         }
+    });
+}
+
+// MENU BUTTON BEING CLICKABLE ON MOBILE PHONES
+
+const menuIcon = document.querySelector('.menu');
+const dropdown = document.querySelector('.dropdown');
+
+menuIcon.addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevent click event from propagating
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+document.addEventListener('click', function(event) {
+    if (!menuIcon.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
+});
+
+// EAMIL FORM
+
+function showThanks() {
+    document.querySelector("form").style.display = "none";
+    document.getElementById("thank-you").style.display = "block";
+    return true;
+}
+
+// SCROLL TO FUNCTION
+
+function scrollToXY(xCoord, yCoord) {
+    window.scrollTo({
+      left: xCoord,
+      top: yCoord,
+      behavior: 'smooth'
     });
 }
