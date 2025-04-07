@@ -283,5 +283,51 @@ nav .website-name {
     margin-right: 10px;
 }
 
-/* PLAYER PROFILE HEADSHOT */
+/* HOME PAGE ARTICLES */
 
+.articles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 30px;
+}
+
+.articles figure {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: #333;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	margin: 0;
+}
+
+.articles figure img {
+	max-height: 100%;
+	max-width: 35%;
+	object-fit: contain;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+
+.articles figure .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	max-width: 60%;
+}
+
+.articles figure h4 {
+	font-size: 1.5rem;
+	margin: 0 0 10px 0;
+}
+
+.articles figure p, a {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin: 0;
+    color: white;
+}
