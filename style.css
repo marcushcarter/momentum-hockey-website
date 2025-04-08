@@ -384,9 +384,9 @@ nav .website-name {
 }
 
 .headshot {
-    position: relative;
-    left: calc(50vw - 100px);
-    bottom: 100px;
+    position: absolute;
+    left: calc(50vw - 120px);
+    bottom: 240px;
     width: 200px; 
     height: 200px; 
     padding: 10px; 
