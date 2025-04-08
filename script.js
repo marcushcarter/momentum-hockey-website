@@ -103,10 +103,28 @@ function showThanks() {
 
 // SCROLL TO FUNCTION
 
-function scrollToXY(xCoord, yCoord) {
-    window.scrollTo({
-      left: xCoord,
-      top: yCoord,
-      behavior: 'smooth'
-    });
+function goToPageAndScroll(pageUrl, elementId) {
+    // Use a query parameter instead of a hash
+    const url = `${pageUrl}?scrollTo=${elementId}`;
+    window.location.href = url;
 }
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const elementId = params.get('scrollTo');
+
+    if (elementId) {
+        const target = document.getElementById(elementId);
+        if (target) {
+            const offset = 35; // pixels to go up
+            const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
+            const scrollPosition = elementTop - offset;
+
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
