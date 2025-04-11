@@ -13,6 +13,7 @@ class Navbar extends HTMLElement {
                         <a href="advising.html">Advising</a>
                         <a href="services.html">Services</a>
                         <a href="contact-us.html">Contact Us</a>
+                        <a href="scouting.html">Scouting</a>
                     </div>
                 </div>
                 <!-- <a href="index.html"><img class="navbar-logo" src="resources/Marcus Carter.JPG"></a> -->
@@ -117,7 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (elementId) {
         const target = document.getElementById(elementId);
         if (target) {
-            const offset = 35; // pixels to go up
+            const offset = 90; // pixels to go up
             const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
             const scrollPosition = elementTop - offset;
 
