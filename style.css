@@ -114,6 +114,12 @@ nav {
 .navbar-logo {
     height: 40px;
     padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.navbar-logo:hover {
+    height: 41px;
+    box-shadow: 2px 2px 5px white;
 }
 
 nav .website-name {
@@ -320,7 +326,7 @@ nav .website-name {
 
 @keyframes scroll {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-500%); }
+    100% { transform: translateX(-200px); }
 }
 
 .carousel-container {
@@ -332,7 +338,7 @@ nav .website-name {
 }
 .carousel-images {
     display: flex;
-    animation: scroll 60s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 .carousel-images img {
     height: 250px;
