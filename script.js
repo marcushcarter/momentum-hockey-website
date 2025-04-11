@@ -34,7 +34,7 @@ class Footer extends HTMLElement {
                 </div>
                 <div class="extra-links">
                     <a href="our-staff.html">About</a>
-                    <a target=_self>Contact us</a>
+                    <a href="contact-us.html" target=_self>Contact us</a>
                     <a href="services.html">Services</a>
                     <a>Privacy Policy</a>
                 </div>
@@ -95,14 +95,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// EAMIL FORM
-
-function showThanks() {
-    document.querySelector("form").style.display = "none";
-    document.getElementById("thank-you").style.display = "block";
-    return true;
-}
-
 // SCROLL TO FUNCTION
 
 function goToPageAndScroll(pageUrl, elementId) {
@@ -119,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (elementId) {
         const target = document.getElementById(elementId);
         if (target) {
-            const offset = 90; // pixels to go up
+            const offset = 135; // pixels to go up
             const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
             const scrollPosition = elementTop - offset;
 
