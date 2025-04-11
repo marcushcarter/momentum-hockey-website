@@ -111,18 +111,25 @@ nav {
 
 }
 
+.navbar-logo {
+    height: 40px;
+    padding: 0;
+}
+
 nav .website-name {
     display: inline-block;
     padding: 20px;
     height: 41px;
+    font-size: 25px;
 
     position: absolute;
-    top: 30px;
+    top: 33px;
     left: 50%;
     transform: translate(-50%, -50%);
 
     color: var(--momentum-hockey-green);
     text-decoration: none;
+    white-space: nowrap;
 
 }
 
@@ -152,7 +159,7 @@ nav .website-name {
     padding: 10px;
     border-radius: 5px;
     min-width: 150px;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .dropdown a {
@@ -166,8 +173,7 @@ nav .website-name {
 }
 
 .dropdown a:hover {
-    box-shadow: 0 0 10px var(--glow-color),
-                 0 0 20px var(--glow-spread-color);
+    box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-spread-color);
     color: var(--momentum-hockey-green);
     animation: box-shimmer-select 1.5s infinite alternate;
     transition: all 0.2s ease-in-out;
@@ -185,12 +191,12 @@ nav .website-name {
     background: #333;
     min-height: 25px;
     opacity: 0.95;
-    z-index: 9999;
+    z-index: 999;
     background: #33333380;
     backdrop-filter: blur(20px);
 
     position: sticky;
-    top: 38px;
+    top: 63px;
 }
 
 #search-bar {

@@ -14,10 +14,11 @@ class Navbar extends HTMLElement {
                         <a href="services.html">Services</a>
                         <a href="contact-us.html">Contact Us</a>
                         <a href="scouting.html">Scouting</a>
+                        <a href="rankings.html">Rankings</a>
                     </div>
                 </div>
-                <!-- <a href="index.html"><img class="navbar-logo" src="resources/Marcus Carter.JPG"></a> -->
-                <a href="index.html" class="website-name">MOMENTUM HOCKEY</a>
+                <a href="index.html"><img class="navbar-logo" src="resources/favicon.png"></a>
+                <a class="website-name">MOMENTUM HOCKEY</a>
             </nav>
         `;
     }
