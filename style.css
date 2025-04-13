@@ -455,6 +455,14 @@ nav .website-name {
 
 /* Scouting Search List */
 
+.games-search-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .scouting-search-list body {
     margin: 0;
     height: 100vh;
@@ -470,16 +478,11 @@ nav .website-name {
     border: solid 2px white;
     box-sizing: border-box;
     background: #222;
-
-    position: relative;
-    left: calc(50% - ((100vw - 40px)/2));
 }
 
 .scouting-search-list img {
-    width: calc(100% - 20px - 20px);
+    width: calc(100% - 40px);
     max-height: 500px;
-
-
 }
 
 .scouting-search-list a {
@@ -491,4 +494,6 @@ nav .website-name {
 
 .games-search-list li {
     list-style-type: none;
+    width: calc(100% - 20px - 20px);
+    max-width: 800px;
 }
