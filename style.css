@@ -7,7 +7,7 @@ body, html {
     background-color: black;
     color: white;
 
-    --momentum-hockey-green: rgb(57, 160, 57);
+    --momentum-hockey-green: #00a651;
 }
 
 /* TEXT AND IMAGE UTILITY */
@@ -32,6 +32,32 @@ body, html {
     margin: 20px;
     object-fit: cover;
     
+}
+
+.margined-750 {
+    max-width: 750px;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.margined-750 .page-break {
+    max-width: none;
+    width: 100%;
+    margin: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.margined-750 img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.margined-750 video {
+    object-fit: cover;
+    width: 100%;
 }
 
 .page-break {
