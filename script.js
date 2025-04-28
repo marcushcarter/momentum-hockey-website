@@ -7,17 +7,17 @@ class Navbar extends HTMLElement {
                 <div class="menu-container">
                     <div class="menu"><i class="fa-solid fa-bars icon"></i></div>
                     <div class="dropdown">
-                        <a href="index.html">Home</a>
-                        <a href="our-players.html">Our Players</a>
-                        <a href="our-staff.html">Our Staff</a>
-                        <a href="advising.html">Advising</a>
-                        <a href="services.html">Services</a>
-                        <a href="contact-us.html">Contact Us</a>
-                        <a href="scouting.html">Scouting</a>
-                        <a href="rankings.html">Rankings</a>
+                        <a href="index">Home</a>
+                        <a href="/our-players">Our Players</a>
+                        <a href="/our-staff">Our Staff</a>
+                        <a href="/advising">Advising</a>
+                        <a href="/services">Services</a>
+                        <a href="/contact-us">Contact Us</a>
+                        <a href="/scouting">Scouting</a>
+                        <a href="/rankings">Rankings</a>
                     </div>
                 </div>
-                <a href="index.html"><img class="navbar-logo" src="resources/favicon.png"></a>
+                <a href="/index"><img class="navbar-logo" src="resources/favicon.png"></a>
                 <a class="website-name">MOMENTUM HOCKEY</a>
             </nav>
         `;
@@ -33,9 +33,9 @@ class Footer extends HTMLElement {
                     <a href="https://instagram.com/momentumhockeyscouts" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="extra-links">
-                    <a href="our-staff.html">About</a>
-                    <a href="contact-us.html" target=_self>Contact us</a>
-                    <a href="services.html">Services</a>
+                    <a href="our-staff">About</a>
+                    <a href="contact-us" target=_self>Contact us</a>
+                    <a href="services">Services</a>
                     <a>Privacy Policy</a>
                 </div>
                 <a class="copyright">Momentum Hockey Scouts © 2024</a>
